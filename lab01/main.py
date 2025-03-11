@@ -1,5 +1,5 @@
-txt = open('input_1.txt')
-y = txt.readlines()
+file = open('input_1.txt')
+y = file.readlines()
 right = []
 left = []
 
@@ -13,8 +13,8 @@ def result(a, b):
     b.sort()
     result_ = []
     for i in range(len(a)):
-        res = abs(a[i] - b[i])
-        result_.append(res)
+        function = abs(a[i] - b[i])
+        result_.append(function)
     return sum(result_)
 
 print(result(left, right))
