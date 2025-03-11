@@ -1,6 +1,6 @@
 txt = open('input_3.txt')
 y = txt.readlines()
-list_count = []
+list = []
 
 def nums(a):
     numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
@@ -23,8 +23,8 @@ def nums(a):
     return number
 
 for i in y:
-    list_count.append(nums(i))
-    int_list_count = [int(h) for h in list_count]
+    list.append(nums(i))
+    int_list= [int(b) for b in list]
 
-print(sum(int_list_count))
-print(int_list_count)
+print(sum(int_list))
+print(int_list)
